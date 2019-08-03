@@ -16,3 +16,4 @@ commitstr=`git commit -m '$currentTimeStamp'`
 pushstr=`git push -u origin master` 
 
 echo $pushstr
+echo $commitstr
