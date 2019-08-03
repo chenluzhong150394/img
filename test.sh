@@ -7,8 +7,8 @@ timeStamp=`date -d "$current" +%s`
 currentTimeStamp=$((timeStamp*1000+`date "+%N"`/1000000)) 
 
 echo $currentTimeStamp
-addstr = `git add .`
-commitstr = `git commit -m '$currentTimeStamp'`
-pushstr = `git push -u origin master` 
+addstr=`git add .`
+commitstr=`git commit -m '$currentTimeStamp'`
+pushstr=`git push -u origin master` 
 
 echo $pushstr
