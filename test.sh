@@ -11,8 +11,10 @@ dir_path='/home/chen/图片/git/'
 cd $dir_path
 
 echo $currentTimeStamp
+
+
 addstr=`git add .`
-commitstr=`git commit -m '$currentTimeStamp'`
+commitstr=`git commit -m "$currentTimeStamp"`
 pushstr=`git push -u origin master` 
 
 echo $pushstr
